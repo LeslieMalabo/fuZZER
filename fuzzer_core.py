@@ -74,3 +74,25 @@ def generate_llm_seed(self, context_description):
         seed_name = f"llm_generated_{random.randint(1, 100)}"
         self.add_seed(seed_name, simulated_response)
         return seed_name
+
+def get_vulnerability_stats(self):
+        """
+        Calculates the frequency of each vulnerability type found.
+        Returns a dictionary where:
+        - Keys are vulnerability types (e.g., 'Buffer Overflow')
+        - Values are the number of occurrences.
+        """
+        stats = {}
+        
+        # We iterate through the list of dictionaries
+        for vuln in self.vulnerabilities:
+            # We extract the type of the current vulnerability
+            v_type = vuln["type"]
+            
+            # Logic: If the type exists, increment. If not, initialize to 1.
+            if v_type in stats:
+                stats[v_type] += 1
+            else:
+                stats[v_type] = 1
+                
+        return stats
