@@ -61,3 +61,16 @@ if __name__ == "__main__":
     
     print("\n--- FINAL REPORT ---")
     print(fuzzer.get_summary())
+
+def generate_llm_seed(self, context_description):
+        """
+        Simulates an API call to an LLM (Claude/GPT) to get a clever test input.
+        In CodeSignal, you'll often need to 'format' strings like this.
+        """
+        # Imagine the LLM returns a structured string based on our physics context
+        simulated_response = f"ADVERSARIAL_INPUT_{random.randint(100, 999)}_EXP_ALPHA"
+        
+        # We store it using our existing method
+        seed_name = f"llm_generated_{random.randint(1, 100)}"
+        self.add_seed(seed_name, simulated_response)
+        return seed_name
