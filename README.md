@@ -5,12 +5,12 @@ This project is a proof-of-concept pipeline designed to enhance traditional soft
 
 **Note:** This is an ongoing research project exploring the intersection of AI Safety and Cybersecurity.
 
-##  The Physics Perspective
+## The Physics Perspective
 As a physicist, I approach software security through the lens of **Dynamical Systems**. A program can be viewed as a system of states; "fuzzing" is the process of perturbing the system's input space to identify boundary conditions where the state-space transitions into an unstable regime (a crash). Using an LLM allows for a "guided" perturbation rather than a purely stochastic (random) approach.
 
 
 
-## 🛠️ Features
+## Features
 - **Intelligent Seed Generation:** Uses LLM prompting to create context-aware test cases.
 - **Vulnerability Tracking:** Automated detection of Buffer Overflows and character-based injections.
 - **Python-C Integration:** A bridge between high-level logic and low-level binary execution.
