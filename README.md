@@ -32,5 +32,5 @@ As a physicist, I approach software security through the lens of **Dynamical Sys
 - [ ] Add support for Grey-box fuzzing (code coverage analysis).
 
 ---
-**Contact:**   www.linkedin.com/in/lesliemalabo
+** Contact:**   www.linkedin.com/in/lesliemalabo
 *Developed as part of my journey into AI Safety and Robustness.*
